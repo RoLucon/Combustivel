@@ -13,6 +13,8 @@
 		897AD60B25F933E7007730F5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 897AD60A25F933E7007730F5 /* Preview Assets.xcassets */; };
 		897AD60D25F933E7007730F5 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897AD60C25F933E7007730F5 /* Persistence.swift */; };
 		897AD61025F933E8007730F5 /* Combustivel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 897AD60E25F933E8007730F5 /* Combustivel.xcdatamodeld */; };
+		8986EF0925FD263800F26E01 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8986EF0825FD263800F26E01 /* OnboardingView.swift */; };
+		8986EF0D25FD286000F26E01 /* OnboardingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8986EF0C25FD286000F26E01 /* OnboardingCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		897AD60C25F933E7007730F5 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		897AD60F25F933E8007730F5 /* Combustivel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Combustivel.xcdatamodel; sourceTree = "<group>"; };
 		897AD61125F933E8007730F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8986EF0825FD263800F26E01 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		8986EF0C25FD286000F26E01 /* OnboardingCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,9 +82,19 @@
 		897AD61825F93915007730F5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8986EF0725FD261D00F26E01 /* Onboarding */,
 				897AD60525F933E7007730F5 /* ContentView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		8986EF0725FD261D00F26E01 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				8986EF0825FD263800F26E01 /* OnboardingView.swift */,
+				8986EF0C25FD286000F26E01 /* OnboardingCard.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,8 +167,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				897AD60D25F933E7007730F5 /* Persistence.swift in Sources */,
+				8986EF0D25FD286000F26E01 /* OnboardingCard.swift in Sources */,
 				897AD61025F933E8007730F5 /* Combustivel.xcdatamodeld in Sources */,
 				897AD60625F933E7007730F5 /* ContentView.swift in Sources */,
+				8986EF0925FD263800F26E01 /* OnboardingView.swift in Sources */,
 				897AD60425F933E7007730F5 /* CombustivelApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
