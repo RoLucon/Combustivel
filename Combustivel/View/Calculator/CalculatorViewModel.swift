@@ -23,7 +23,7 @@ class CalculatorViewModel: ObservableObject {
     }
     
     var isAlcohol: Bool {
-        gasolinePrice > alcoholPrice
+        (alcoholPrice / gasolinePrice) < 0.7
     }
     
     @Published var isCalculating: Bool = false
