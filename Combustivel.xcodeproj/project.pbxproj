@@ -13,6 +13,13 @@
 		897AD60B25F933E7007730F5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 897AD60A25F933E7007730F5 /* Preview Assets.xcassets */; };
 		897AD60D25F933E7007730F5 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897AD60C25F933E7007730F5 /* Persistence.swift */; };
 		897AD61025F933E8007730F5 /* Combustivel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 897AD60E25F933E8007730F5 /* Combustivel.xcdatamodeld */; };
+		8986EEFB25FD0CE600F26E01 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8986EEFA25FD0CE600F26E01 /* UIApplication.swift */; };
+		8986EF0025FD0DC700F26E01 /* CalculatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8986EEFF25FD0DC700F26E01 /* CalculatorViewModel.swift */; };
+		8986EF0425FD0E6600F26E01 /* CalculatorPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8986EF0325FD0E6600F26E01 /* CalculatorPanelView.swift */; };
+		899C56A025F93DC6007AD69E /* CustomSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899C569F25F93DC6007AD69E /* CustomSlider.swift */; };
+		899C56A925F9419A007AD69E /* RoundedRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899C56A825F9419A007AD69E /* RoundedRectangle.swift */; };
+		899C56B125F97C58007AD69E /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899C56B025F97C58007AD69E /* View.swift */; };
+		899C56B825F9A312007AD69E /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899C56B725F9A312007AD69E /* CalculatorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		897AD60C25F933E7007730F5 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		897AD60F25F933E8007730F5 /* Combustivel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Combustivel.xcdatamodel; sourceTree = "<group>"; };
 		897AD61125F933E8007730F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8986EEFA25FD0CE600F26E01 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
+		8986EEFF25FD0DC700F26E01 /* CalculatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewModel.swift; sourceTree = "<group>"; };
+		8986EF0325FD0E6600F26E01 /* CalculatorPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorPanelView.swift; sourceTree = "<group>"; };
+		899C569F25F93DC6007AD69E /* CustomSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSlider.swift; sourceTree = "<group>"; };
+		899C56A825F9419A007AD69E /* RoundedRectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedRectangle.swift; sourceTree = "<group>"; };
+		899C56B025F97C58007AD69E /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		899C56B725F9A312007AD69E /* CalculatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,8 @@
 		897AD60225F933E7007730F5 /* Combustivel */ = {
 			isa = PBXGroup;
 			children = (
+				899C56A725F9417B007AD69E /* Extensions */,
+				899C569C25F93D9E007AD69E /* Elements */,
 				897AD61825F93915007730F5 /* View */,
 				897AD60325F933E7007730F5 /* CombustivelApp.swift */,
 				897AD60725F933E7007730F5 /* Assets.xcassets */,
@@ -78,9 +94,46 @@
 		897AD61825F93915007730F5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8986EEFD25FD0D6800F26E01 /* Calculator */,
 				897AD60525F933E7007730F5 /* ContentView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		8986EEFD25FD0D6800F26E01 /* Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				899C56B725F9A312007AD69E /* CalculatorView.swift */,
+				8986EEFF25FD0DC700F26E01 /* CalculatorViewModel.swift */,
+				8986EF0325FD0E6600F26E01 /* CalculatorPanelView.swift */,
+			);
+			path = Calculator;
+			sourceTree = "<group>";
+		};
+		899C569C25F93D9E007AD69E /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+				899C569D25F93DAD007AD69E /* Slider */,
+			);
+			path = Elements;
+			sourceTree = "<group>";
+		};
+		899C569D25F93DAD007AD69E /* Slider */ = {
+			isa = PBXGroup;
+			children = (
+				899C569F25F93DC6007AD69E /* CustomSlider.swift */,
+			);
+			path = Slider;
+			sourceTree = "<group>";
+		};
+		899C56A725F9417B007AD69E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				899C56A825F9419A007AD69E /* RoundedRectangle.swift */,
+				899C56B025F97C58007AD69E /* View.swift */,
+				8986EEFA25FD0CE600F26E01 /* UIApplication.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,9 +205,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8986EEFB25FD0CE600F26E01 /* UIApplication.swift in Sources */,
+				899C56B125F97C58007AD69E /* View.swift in Sources */,
 				897AD60D25F933E7007730F5 /* Persistence.swift in Sources */,
 				897AD61025F933E8007730F5 /* Combustivel.xcdatamodeld in Sources */,
+				8986EF0025FD0DC700F26E01 /* CalculatorViewModel.swift in Sources */,
 				897AD60625F933E7007730F5 /* ContentView.swift in Sources */,
+				899C56A925F9419A007AD69E /* RoundedRectangle.swift in Sources */,
+				899C56A025F93DC6007AD69E /* CustomSlider.swift in Sources */,
+				8986EF0425FD0E6600F26E01 /* CalculatorPanelView.swift in Sources */,
+				899C56B825F9A312007AD69E /* CalculatorView.swift in Sources */,
 				897AD60425F933E7007730F5 /* CombustivelApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,7 +348,7 @@
 				DEVELOPMENT_TEAM = 345TT87MMY;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Combustivel/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,7 +356,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = RogerioLucon.Combustivel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -310,7 +370,7 @@
 				DEVELOPMENT_TEAM = 345TT87MMY;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Combustivel/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -318,7 +378,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = RogerioLucon.Combustivel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

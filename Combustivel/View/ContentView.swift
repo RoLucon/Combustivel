@@ -12,7 +12,10 @@ struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
 
     var body: some View {
-        Text("Hellow")
+        CalculatorView()
+            .onTapGesture {
+                UIApplication.shared.endEditing()
+            }
     }
     
 }
