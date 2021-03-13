@@ -13,6 +13,9 @@ struct ContentView: View {
 
     var body: some View {
         CalculatorView()
+            .onTapGesture {
+                UIApplication.shared.endEditing()
+            }
     }
     
 }
